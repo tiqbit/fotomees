@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* vajalikud fondid on:
+menüü
+Font Roboto
+Weight 400, Regular
+Style normal
+Size 24px
+Line height 28.13px
+
+logo
+Font Waiting for the Sunrise
+Weight 300, Light
+Style normal
+Size 64px
+Line height 105.81px
+Letter 10%
+
+piltide all
+Font Roboto
+Weight 400, Regular
+Style normal
+Size 24px
+Line height 28.13px
+Align Center
+
+footeris
+Font Roboto
+Weight 400, Regular
+Style normal
+Size 18px
+Line height 21.09px
+Align Center
+*/
+
+.banner-image img, .main-image img {
+    width: 100%;
+}
+/* vajalik mobiilivaates .banner-image kaotamiseks
+.meist_image img {
+    display: none;
+}*/
+
+.banner-text {       
+    /*kujundus*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 3px;
+    line-height: 32px;
+    color: #ffffff;
+    /*text-transform: uppercase;*/
+    /*text-shadow: 3px 3px 9px #111111;*/
+    /*positsioneerimine*/
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+
+.gallery-image img {
+    width: 75%;
+}
+
+
+header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/*body*/
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+} 
+
+.gallery-links {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* Icons */
+
+
+/* Footer */
+
+
+@media only screen and (min-width: 800px) {
+    header .header-banner {
+        height: calc(100vh - 400px);
+    }   
+    header h1 a {
+        font-size: 80px;
+    }  
+    header h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+}
