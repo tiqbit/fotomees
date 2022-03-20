@@ -1,55 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Waiting+for+the+Sunrise&display=swap');
 
-/* vajalikud fondid on:
-menüü
-Font Roboto
-Weight 400, Regular
-Style normal
-Size 24px
-Line height 28.13px
-
-logo
-Font Waiting for the Sunrise
-Weight 300, Light
-Style normal
-Size 64px
-Line height 105.81px
-Letter 10%
-
-piltide all
-Font Roboto
-Weight 400, Regular
-Style normal
-Size 24px
-Line height 28.13px
-Align Center
-
-footeris
-Font Roboto
-Weight 400, Regular
-Style normal
-Size 18px
-Line height 21.09px
-Align Center
-*/
-
-.banner-image img, .main-image img {
-    width: 100%;
-}
-
-.banner-text {       
-    /*kujundus*/
-    font-family: "Waiting for the Sunrise", sans-serif;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 105.81px;
-    color: #ffffff;
-    /*positsioneerimine*/
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-}
 
 .menu {
     display: flex;
@@ -66,38 +16,40 @@ Align Center
 }
 
 .nav ul li a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-weight: 400;
     font-size: 24px;
     padding: 0 10px 0 10px;
+    color: #000000;
 }
 
-.gallery-image img {
-    width: 75%;
-}
-/*
-header h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: #ffffff;
-    line-height: 70px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 8px #000000;
+.banner {
+    display: flex;
+    justify-content: center;
 }
 
-header h2 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 5px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-style: italic;
+.banner-image img, .main-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding: 10px 0 20px 0
 }
-*/
 
 /*body*/
+
+.gallery-image img {
+    width: 90%;
+}
+
+.gallery-links a {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
 
 .gallery-image {
     margin: 10px;
@@ -129,11 +81,34 @@ header h2 {
     justify-content: center;
 }
 
-/* Icons */
-
 
 /* Footer */
 
+.contact {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    color: #000000;
+}
+
+/* Fotomees OÜ | info@fotomees.ee | +372 5555 5555 
+.contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    flex-flow: row;
+    justify-content: space-evenly; 
+    align-items: center;
+
+    color: #000000;
+}*/
 /*
 @media only screen and (min-width: 800px) {
     header .header-banner {
