@@ -49,7 +49,8 @@
 /*body*/
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 0 0 15%;
 }
 
 .main-text {
@@ -62,6 +63,19 @@
     color: #000000;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+.main-text-kontakt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -124,6 +138,9 @@
     .main-text {
         font-size: 32px;
     }
+    .main-text-kontakt {
+        font-size: 18px;
+    }
     .nav ul, .sm {
         padding: 5px 0 10px 0;
     }
@@ -143,8 +160,17 @@
         display: flex;
         justify-content: center;
     }
+    .main {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
     .main-text {
         font-size: 20px;
+        text-transform: none;
+    }
+    .main-text-kontakt {
+        font-size: 13px;
         text-transform: none;
     }
     .banner-image img {
