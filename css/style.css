@@ -49,8 +49,14 @@
 /*body*/
 .main {
     display: flex;
+    justify-content: center;
+}
+
+.main-kontakt, .kontakt-links {
+    display: flex;
     justify-content: flex-start;
-    padding: 0 0 0 15%;
+    flex-direction: column;
+    padding: 0 0 20px 15%;
 }
 
 .main-text {
@@ -161,6 +167,11 @@
         justify-content: center;
     }
     .main {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
+    .main-kontakt {
         display: flex;
         justify-content: center;
         padding: 0 0 0 0;
