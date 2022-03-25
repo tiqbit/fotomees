@@ -59,32 +59,61 @@
 		<!-- Kontaktid -->
 		<!-- Siin on vaja lisada tel: +372 5555 5554 tiina@fotomees.ee ja  tel: +372 5555 5555 priit@fotomees.ee-->
 		<section class="kontakt-links">
-			<a href="#" class="kontakt-image">
-			<div class="container"> <img src="images/tiina1.png" alt="Tiina Talumees"/>
-			<p class=post-header>Tiina Talumees</p></div>
-			</a>
+			<div href="#" class="kontakt-image">
+				<div class="container-image"> 
+					<img src="images/tiina1.png" alt="Tiina Talumees"/>
+				</div>
+				<div class="container-text">
+					<span>Tiina Talumees&nbsp;&nbsp;</span>
+					<span>tel: +372 5555 5554&nbsp;&nbsp;</span>
+					<span>tiina@fotomees.ee</span>
+				</div>
+			</div>
 
-			<a href="#" class="kontakt-image">
-			<div class="container"><img src="images/priit1.png" alt="Priit Pildimees"/>
-			<p class=post-header>Priit Pildimees</p></div>
-			</a>
+			<div href="#" class="kontakt-image">
+				<div class="container-image"> 
+					<img src="images/priit1.png" alt="Priit Pildimees"/>
+				</div>
+				<div class="container-text">
+					<span>Priit Pildimees&nbsp;&nbsp;</span>
+					<span>tel: +372 5555 5555&nbsp;&nbsp;</span>
+					<span>priit@fotomees.ee</span>
+				</div>
+			</div>
 
 		</section>
 
 		<!-- Saada kiri -->
-		<!-- Siia on vaja lisada väljad Sinu nimi: E-mail: Sisu: ja nupp SAADA -->
+		<section class="vorm">
+			<form onsubmit="return false"> 		<!-- See süntaksi viga peab nii olema. Ära muuda! -->
+				<span>Sinu nimi:</span>
+				<br>
+				<input type="text" placeholder="" id="names" />
+				<br><br>
+				<span>E-mail:</span>
+				<br>
+				<input type="email" placeholder="" id="email" />
+				<br><br>
+				<span>Sisu:</span>
+				<br>
+				<textarea id="question" rows="6" cols="50"></textarea>
+				<br><br>
+				<button onclick="sendContact();">SAADA</button>
+			</form>
+
+		</section>
 
 		<!-- Footer -->
 		<div id="footer">
 			<!-- Contact -->
 				<div class="contact">
-					<span> Fotomees OÜ | info@fotomees.ee | +372 5555 5555 </span>
-					<!--span>Fotomees OÜ</span><span>info@fotomees.ee</span><span>+372 5555 5555</span-->
+					<span>Fotomees OÜ</span>&nbsp;|&nbsp;<span><a href="mailto:info@fotomees.ee">info@fotomees.ee</a></span>&nbsp;|&nbsp;<span><a href="+372 5555 5555">+372 5555 5555</a></span>
 				</div>
 		</div>
 
-		<!-- Scripts
-			<script src="assets/js/main.js"></script>
- -->
+		<!-- Scripts -->
+		<!--<script src="https://smtpjs.com/v3/smtp.js"></script> -->
+		<script src="js/script.js"></script>
+		
 	</body>
 </html>
