@@ -222,7 +222,7 @@ textarea {
     .main-kontakt {
         display: flex;
         justify-content: center;
-        padding: 0 0 0 0;
+        padding: 0 0 20px 15%;
     }
     .main-text {
         font-size: 20px;
@@ -252,12 +252,12 @@ textarea {
         font-size: 13px;
     }
     .gallery-image {
-        margin: 10px;
+        margin: 5px;
         position: relative;
         text-align: center;
-        -webkit-flex-basis: 150px;
-        -moz-flex-basis: 150px;
-        flex-basis: 150px;
+        -webkit-flex-basis: 120px;
+        -moz-flex-basis: 120px;
+        flex-basis: 120px;
     } 
     .contact {
         font-size: 10px;
